@@ -65,6 +65,16 @@ return {
     },
   },
 
+  plugins = {
+    {
+      "tpope/vim-fugitive",
+      name = "vim-fugitive",
+      event = "User AstroGitFile",
+      config = function()
+        require("vim-fugitive").setup {}
+      end,
+    }
+  },
 
   -- This function is run last and is a good place to configuring
   -- augroups/autocommands and custom filetypes also this just pure lua so
