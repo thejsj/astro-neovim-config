@@ -8,7 +8,8 @@ return {
     signcolumn     = "auto", -- sets vim.opt.signcolumn to auto
     wrap           = false,  -- sets vim.opt.wrap
     ruler          = true,   -- Set a rules
-    foldlevel      = 999     -- Very high foldlevel means no folding
+    foldlevel      = 999,    -- Very high foldlevel means no folding
+    guicursor      = "n-v-c-i:block"
   },
   g = {
     mapleader = ",",                 -- sets vim.g.mapleader
