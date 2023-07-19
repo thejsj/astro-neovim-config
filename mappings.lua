@@ -17,10 +17,20 @@ return {
     ["<leader>c"] = {
       function() require("Comment.api").toggle.linewise.count(vim.v.count > 0 and vim.v.count or 1) end,
       desc = "Toggle comment line",
+    },
+    -- Function is in vimscript: functions.vim
+    ["<leader>ff"] = {
+      ":call EchoAndCopyPath()<CR>",
+      desc = "Echo and copy path of current file",
+    },
+    -- Function is in vimscript: functions.vim
+    ["<leader>fa"] = {
+      ":call EchoAndCopyFilename()<CR>",
+      desc = "Echo and copy filename of current file",
     }
   },
   v = {
-    ["<leader>/"] = {
+    ["<leader>c"] = {
       "<esc><cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<cr>",
       desc = "Toggle comment for selection",
     }

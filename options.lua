@@ -9,7 +9,21 @@ return {
     wrap           = false,  -- sets vim.opt.wrap
     ruler          = true,   -- Set a rules
     foldlevel      = 999,    -- Very high foldlevel means no folding
-    guicursor      = "n-v-c-i:block"
+    guicursor      = "n-v-c-i:block",
+    shiftwidth = 2,
+    tabstop = 2,
+    -- nojoinspaces = true,
+    softtabstop = 2,
+    autoindent = true,
+    -- colorcolumn = 80,
+    mouse = "a",
+    mousehide = true,
+    virtualedit = "onemore",
+    cursorline = true,
+    backspace = "indent,eol,start",
+    ignorecase = true,
+    hlsearch = true,
+    incsearch = true
   },
   g = {
     mapleader = ",",                 -- sets vim.g.mapleader
