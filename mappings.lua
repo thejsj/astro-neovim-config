@@ -19,6 +19,11 @@ return {
       desc = "Toggle comment line",
     },
     -- Function is in vimscript: functions.vim
+    ["<leader>dd"] = {
+      ":lua vim.diagnostic.open_float()",
+      desc = "Open the float for the current error",
+    },
+    -- Function is in vimscript: functions.vim
     ["<leader>ff"] = {
       ":call EchoAndCopyPath()<CR>",
       desc = "Echo and copy path of current file",

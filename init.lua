@@ -4,6 +4,7 @@ return {
     remote = "origin",     -- remote to use
     channel = "stable",    -- "stable" or "nightly"
     version = "latest",    -- "latest", tag name, or regex search like "v1.*" to only do updates before v2 (STABLE ONLY)
+    -- autochdir = true,      -- https://www.reddit.com/r/AstroNvim/comments/zqiqin/neotree_does_not_follow_current_working_directory/
     branch = "nightly",    -- branch name (NIGHTLY ONLY)
     commit = nil,          -- commit hash (NIGHTLY ONLY)
     pin_plugins = nil,     -- nil, true, false (nil will pin plugins on stable only)
@@ -63,17 +64,6 @@ return {
         disabled_plugins = { "tohtml", "gzip", "matchit", "zipPlugin", "netrwPlugin", "tarPlugin" },
       },
     },
-  },
-
-  plugins = {
-    {
-      "tpope/vim-fugitive",
-      name = "vim-fugitive",
-      event = "User AstroGitFile",
-      config = function()
-        require("vim-fugitive").setup {}
-      end,
-    }
   },
 
   -- This function is run last and is a good place to configuring

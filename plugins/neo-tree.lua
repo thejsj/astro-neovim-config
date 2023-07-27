@@ -8,8 +8,9 @@ return {
         {
           event = "file_opened",
           handler = function()
+            vim.cmd 'Neotree close'
             --auto close
-            require("neo-tree").close_all()
+            -- require("neo-tree").close_all()
           end
         },
       }
