@@ -74,17 +74,10 @@ return {
   -- augroups/autocommands and custom filetypes also this just pure lua so
   -- anything that doesn't fit in the normal config locations above can go here
   polish = function()
-    -- Set up custom filetypes
-    -- vim.filetype.add {
-    --   extension = {
-    --     foo = "fooscript",
-    --   },
-    --   filename = {
-    --     ["Foofile"] = "fooscript",
-    --   },
-    --   pattern = {
-    --     ["~/%.config/foo/.*"] = "fooscript",
-    --   },
-    -- }
+  ▎  require('telescope').load_extension('fzf')
+  ▎  vim.cmd('source /Users/jsilva/.config/nvim/functions.vim')
+  ▎  vim.cmd([[
+  ▎  ▏ let g:session_default_directory = FindSessionDirectory()
+  ▎  ]])
   end,
 }
