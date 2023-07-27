@@ -10,5 +10,15 @@ return {
     "tpope/vim-rhubarb",
     name = "vim-rhubarb",
     event = "User AstroGitFile",
+  },
+  {
+    "tpope/vim-surround",
+    name = "vim-surround",
+    event = "User AstroGitFile",
+  },
+  {
+    'nvim-telescope/telescope-fzf-native.nvim', 
+    name = "telescope-fzf-native",
+    build = 'make'
   }
 }
